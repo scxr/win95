@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "W95";
+  overflow-y: hidden;
 } 
 
 a {
