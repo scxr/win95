@@ -6,7 +6,7 @@ import {MdOutlineArrowBackIosNew} from "react-icons/md"
 import {AiOutlineReload} from "react-icons/ai"
 import Draggable from 'react-draggable'; // The default
 
-const Taskbar = () => {
+const Taskbar = (props) => {
     const [showStart, setShowStart] = useState(false)
     const [isShutDown, setShutDown] = useState(false)
     const [timeLeft, setTimeLeft] = useState(null);
@@ -19,8 +19,9 @@ const Taskbar = () => {
            
            
            setTimeout(function() {
-               setIsShuttingDown(false)
-            setShutDown(true)
+           setIsShuttingDown(false)
+           setShutDown(true)
+           props.handleShutdown("sd")
            }, 1000)
         }
     
@@ -73,7 +74,7 @@ const Taskbar = () => {
                         <p>You have left reality...</p>
                         <p>Are you looking for something?...</p>
                         <p>Isnt everybody?...</p>
-                        <button onClick={() => setShutDown(false)}><AiOutlineReload style={{color: "green", fontWeight: "800"}} /> RESTART</button>
+                        <button onClick={() => {setShutDown(false);props.handleShutdown("rb")}}><AiOutlineReload style={{color: "green", fontWeight: "800"}} /> RESTART</button>
                     </div>
                 ) : (
                     <div className={styles.taskBar}>

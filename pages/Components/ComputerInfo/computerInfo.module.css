@@ -1,0 +1,54 @@
+.infoCont {
+    position: absolute;
+    left: 40%;
+    top: 100px;
+    background-color: black;
+    border: 1px solid white;
+    width: 700px;
+    height: 600px;
+}
+
+.topCont img {
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+}
+
+.topCont {
+    display: inline-block;
+    vertical-align: middle;
+    color: greenyellow;
+}
+
+.topCont span {
+    font-size: 18px;
+    float: right;
+    width: 400px;
+    margin-left: 10px;
+}
+.infoCont p {
+    font-size: 24px;
+    color: greenyellow;
+    text-align: center;
+    margin-top: 100px;
+}
+.infoCont h1 {
+    text-align: center;
+
+    color: greenyellow;
+    
+}
+
+.greyBar {
+    width: 100%;
+    height: 20px;
+    background-color: #1b1b1b;
+}
+
+.greyBar img {
+    position: absolute;
+    right: 10px;
+    height: 20px;
+    background-color: white;
+}
