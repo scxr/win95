@@ -9,8 +9,12 @@ body {
   background-size: cover;
   font-family: "W95";
   overflow-y: hidden;
-} 
+  cursor: url("../public/images/95cursorsmall.png"), default;
+}
+html * {
+  cursor: url("../public/images/95cursorsmall.png"), default;
 
+}
 a {
   color: inherit;
   text-decoration: none;
