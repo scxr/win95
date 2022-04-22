@@ -97,7 +97,7 @@ const Taskbar = (props) => {
                 )
             }
             {
-                showStart & !isShutDown  &&
+                showStart & !isShutDown  ? (
                 <div className={styles.startMenu}>
                 <div className={styles.sideBar}>
                     <h1>Im sorry mother</h1>
@@ -110,7 +110,7 @@ const Taskbar = (props) => {
                 <p onClick={() => {setTimeLeft(5);setShowStart(false)}}><img src="/images/ShutDown.png" /> Shut Down</p>
                 <hr />
                 <p onClick={() => {setTimeLeft(5);setShowStart(false)}}><img src="/images/ShutDown.png" /> Shut Down</p>
-            </div>
+            </div>) : (null)
             }
             
            
