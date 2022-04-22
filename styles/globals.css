@@ -10,6 +10,7 @@ body {
   font-family: "W95";
   overflow-y: hidden;
   cursor: url("../public/images/95cursorsmall.png"), default;
+  
 }
 html * {
   cursor: url("../public/images/95cursorsmall.png"), default;
