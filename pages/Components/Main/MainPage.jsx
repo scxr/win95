@@ -64,7 +64,7 @@ const Main = () => {
                 
             
         }}>
-                <img src="/images/MyComputer.png" />
+                <img src="/images/GLITCH_COMPUTER.gif" />
                 <p style={clickedInfo ? {color: "blue"}:null}>My Computer</p>
             </div>
             <div className={styles.icon} 
@@ -86,7 +86,7 @@ const Main = () => {
                 
             }}
             >
-                <img src="/images/Notepad.png" />
+                <img src="/images/NOTEPAD.gif" />
                 <p style={clickedM ? {color: "blue"}:null}>mission.txt</p>
             </div>
             <div className={styles.icon} 
@@ -108,7 +108,7 @@ const Main = () => {
                 }}
 
             >
-                <img src="/images/Notepad.png" />
+                <img src="/images/NOTEPAD.gif" />
                 <p style={clickedRm ? {color: "blue"}:null}>roadmap.txt</p>
             </div>
 
