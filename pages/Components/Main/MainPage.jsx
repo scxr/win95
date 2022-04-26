@@ -3,13 +3,19 @@ import TextWindow from "../TextWindow/textWindow";
 import Draggable from "react-draggable";
 import { useState } from "react";
 import Inf from "../ComputerInfo/ComputerInfo";
+import Warning from "../Warning/Warning";
+import Router from 'next/router'
+
 const Main = () => {
+    const router = Router
     const [showMissionTxt, setShowMissionTxt] = useState(false)
     const [showRm, setShowRm] = useState(false)
     const [clickedRm, setClickedRm] = useState(false)
     const [clickedM, setClickedM] = useState(false)
     const [clickedInfo, setClickedInfo] = useState(false)
     const [showInfo, setShowInfo] = useState(false)
+    const [clickedPaint, setClickedPaint] = useState(false)
+    const [showPaint, setShowPaint] = useState(false)
     function handleClose (value) {
         if (value==="close") {
             setShowMissionTxt(false)
@@ -25,6 +31,20 @@ const Main = () => {
         if (value==="close") {
             setShowInfo(false)
         }
+    }
+    function handleClosePaint (value) {
+        if (value==="close") {
+            setShowPaint(false)
+        }
+    }
+
+    function paintHandler(value) {
+        if (value === "change") {
+            Router.push("/paint")
+        } else {
+            setShowPaint(false)
+        }
+        
     }
     return (
         <div className={styles.icons}>
@@ -46,7 +66,11 @@ const Main = () => {
                     <TextWindow title={"roadmap.txt"} handleClose={handleCloseRm}/>
                 ) : (null)
             }
-            
+            {
+                showPaint ? (
+                    <Warning title={"paint.txt"} handleClose={handleClosePaint} redirector={paintHandler} warningCont="Clicking this will redirect you to /paint"/>
+                ) : (null)
+            }
             <div className={styles.icon} onClick={()=>{
                 
                 if (clickedInfo) {
@@ -54,12 +78,14 @@ const Main = () => {
                     setClickedRm(false)
                     setClickedM(false)
                     setClickedInfo(false)
+                    setClickedPaint(false)
 
                     
                 } else {
                     setClickedInfo(true)
                     setClickedRm(false)
                     setClickedM(false)
+                    setClickedPaint(false)
                 }
                 
             
@@ -75,12 +101,13 @@ const Main = () => {
                         setClickedRm(false)
                         setClickedM(false)
                         setClickedInfo(false)
-
+                        setClickedPaint(false)
                         
                     } else {
                         setClickedM(true)
                         setClickedRm(false)
                         setClickedInfo(false)
+                        setClickedPaint(false)
                     }
                     
                 
@@ -96,12 +123,13 @@ const Main = () => {
                         setClickedM(false)
                         setClickedRm(false)
                         setClickedInfo(false)
-
+                        setClickedPaint(false)
                         
                     } else {
                         setClickedRm(true)
                         setClickedM(false)
                         setClickedInfo(false)
+                        setClickedPaint(false)
 
                     }
                     
@@ -112,7 +140,28 @@ const Main = () => {
                 <p style={clickedRm ? {color: "blue"}:null}>roadmap.txt</p>
             </div>
 
-            
+            <div className={styles.icon}                 
+            onClick={()=>{
+                    if (clickedPaint) {
+                        setShowPaint(true)
+                        setClickedM(false)
+                        setClickedRm(false)
+                        setClickedInfo(false)
+                        setClickedPaint(false)
+
+                        
+                    } else {
+                        setClickedPaint(true)
+                        setClickedM(false)
+                        setClickedInfo(false)
+                        setClickedRm(false)
+
+                    }
+                    
+                }}>
+                <img src="/images/paint.gif" style={{width: "50px"}} />
+                <p style={clickedPaint ? {color: "blue"}:null}>paint</p>
+            </div>
         </div>
     )
 }

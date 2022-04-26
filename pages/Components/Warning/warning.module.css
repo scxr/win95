@@ -1,0 +1,52 @@
+.textWindow {
+    height: 130px;
+    width: 500px;
+    background-color: rgb(110, 110, 110);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+}
+
+.textWindow .bar {
+    width: 100%;
+    height: 20px;
+    text-align: left;
+    color: white;
+    margin-top: -16px;
+    background-image: linear-gradient(to right,#092763, #f5ffff);
+
+}
+
+.textWindow .bar img {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    text-align: center;
+    background-color: #808080;
+    border: 1px solid black;
+    height: 15px;
+    
+}
+
+.textWindow .bar p {
+    margin-left: 10px;
+}
+
+
+.warningCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.choice button{
+    background-color: #a9a9a9;
+    padding: 3px;
+    margin: 10px;
+    border: none;
+    font-size: 20px;
+    font-family: "W95";
+}

@@ -1,6 +1,7 @@
 .icons {
     margin-top: 20px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .icons .icon {
@@ -8,9 +9,14 @@
     width: 90px;
     text-align: center;
     margin-bottom: 50px;
+    
 }
 
 .icons .icon p {
     font-weight: 800;
+    color: white;
+    cursor: pointer;
 }
-
+.icons .icon img {
+    cursor: pointer;
+}
