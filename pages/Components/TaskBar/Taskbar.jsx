@@ -5,12 +5,21 @@ import { useState, useEffect } from "react";
 import {MdOutlineArrowBackIosNew} from "react-icons/md"
 import {AiOutlineReload} from "react-icons/ai"
 import Draggable from 'react-draggable'; // The default
+import { useContext } from "react";
+import {Minimised} from "../../index"
+import {useMinimise} from "../../context/minimisedStore"
 
 const Taskbar = (props) => {
     const [showStart, setShowStart] = useState(false)
     const [isShutDown, setShutDown] = useState(false)
     const [timeLeft, setTimeLeft] = useState(null);
     const [isShuttingDown, setIsShuttingDown] = useState(false)
+    const minimisedWindows = useContext(Minimised)
+    const [state, actions] = useMinimise()
+    useEffect(() => {
+        console.log("CHASNGED")
+        console.log(state)
+    }, [state])
     useEffect(() => {
         
         if(timeLeft===0){
@@ -40,6 +49,8 @@ const Taskbar = (props) => {
         // add timeLeft as a dependency to re-rerun the effect
         // when we update it
       }, [timeLeft]);
+      console.log("WIN", props.minimisedWindows)
+      console.log("min", state.minimised    )
     return (
         
         <div className={styles.parent}>
@@ -78,7 +89,7 @@ const Taskbar = (props) => {
                     </div>
                 ) : (
                     <div className={styles.taskBar}>
-                
+                        
                     <button onClick={() => setShowStart(!showStart)}>
                         <div className={styles.start}>
                             <img src="/images/start.png" style={{paddingTop: "1px"}}/> 
@@ -86,6 +97,21 @@ const Taskbar = (props) => {
                         </div>
                         
                     </button>
+                    <div className={styles.taskbarIcons}>
+                       
+                        {
+                            state.minimised.length != 0 ? [
+                            Object.values(state.minimised).map((v, i) => (
+                                <div className={styles.icon} key={i} onClick={() => {
+                                    actions.minimise(v["title"]+"o")
+                                }}>
+                                    <img src={v["img"]} style={{cursor: "pointer"}}/>
+                                    <p style={{cursor: "pointer"}}>{v["title"]}</p>
+                                </div>
+                            ))
+                            ] : (null)
+                        }
+                    </div>
                     <div className={styles.timer}>
                         <Clock
                         format={'h:mmA'}

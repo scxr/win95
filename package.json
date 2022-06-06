@@ -9,15 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.1.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "framer-motion": "^6.3.4",
     "moment-timezone": "^0.5.34",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-draggable": "^4.4.4",
+    "react-hook-mighty-mouse": "^1.4.31",
     "react-icons": "^4.3.1",
     "react-live-clock": "^5.8.2",
     "react-moment": "^1.1.2",
-    "react-resize-panel": "^0.3.5"
+    "react-resize-panel": "^0.3.5",
+    "react-sweet-state": "^2.6.0",
+    "react-tsparticles": "^2.0.6",
+    "tsparticles": "^2.0.6"
   },
   "devDependencies": {
     "eslint": "8.13.0",

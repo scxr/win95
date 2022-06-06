@@ -6,6 +6,12 @@
     border: 1px solid white;
     width: 700px;
     height: 600px;
+    -webkit-touch-callout:initial !important; /* iOS Safari */
+    -webkit-user-select: initial!important; /* Safari */
+     -khtml-user-select: initial!important; /* Konqueror HTML */
+       -moz-user-select: initial!important; /* Old versions of Firefox */
+        -ms-user-select: initial!important; /* Internet Explorer/Edge */
+            user-select: initial!important
 }
 
 .topCont img {
@@ -50,5 +56,5 @@
     position: absolute;
     right: 10px;
     height: 20px;
-    background-color: white;
+    background-color: #808080;
 }

@@ -1,0 +1,145 @@
+.parent {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    background-color: aliceblue;
+    height: 700px;
+    width: 500px;   
+    overflow-y: scroll;
+    font-family: "WSans";
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.parent ul {
+    list-style-type:lower-roman
+}
+
+.parent li {
+    font-size: 20px;
+}
+
+.parent .accordion {
+    width: 80%;
+}
+.container {
+  
+  width: 100%;
+  margin: 0 auto;
+}
+
+.parent .bar {
+  width: 100%;
+  font-family: "W95";
+  height: 20px;
+  text-align: left;
+  color: white;
+  margin-top: -16px;
+  background-image: linear-gradient(to right,#07080b, #f5ffff);
+}
+.parent .bar img {
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  text-align: center;
+  background-color: #808080;
+  border: 1px solid black;
+  height: 15px;
+  
+}
+
+.parent .bar p {
+  margin-left: 10px;
+}
+
+  /* .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+    margin: 0 auto !important;
+  } */
+
+  .accordion {
+    width: 80%!important;
+    margin-left: 200px;
+    margin: 0 auto;
+    color: white ;
+    background-color: transparent !important;
+    color: rgb(255, 255, 255);
+  }
+  
+  .accordionButton {
+      background-color: transparent;
+      font-size: 32px;
+      width: 60%;
+      margin: 0 auto;
+      color: rgb(255, 255, 255);
+      box-shadow: none;
+      outline: none;
+      border: none;
+      outline: none;
+      
+  }
+  .accordainIcon {
+    color: black !important;
+  }
+  
+  .MuiPaper-root {
+    margin: 0px auto !important;
+  }
+  
+  .accordain-Heading {
+    font-weight: 600 !important;
+    background-color: black;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  .footer {
+    margin-top: -10px;
+    text-align: center;
+  }
+  .sc-bdfBQB {
+    margin: 0 50px !important;
+  }
+  
+  .icon {
+    margin: 0 2px;
+    font-size: 50px !important;
+    color: white;
+  }
+  
+  .icons > a {
+    text-decoration: none !important;
+    color: white;
+  }
+  
+  .roadmap-team {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* padding: ; */
+    padding: 20px !important;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .roadmap {
+      color: rgb(255, 0, 0);
+      padding-top: 60px;
+    }
+  
+    .sc-bdfBQB {
+      margin: 0 20px !important;
+    }
+  
+    .footer {
+      margin-top: -60px;
+    }
+  }
+  
+
+
+  .overrideHr {
+      background-color:rgba(255, 255, 255, 0.507) !important;
+      width: 100%;
+      height: 2px;
+  }

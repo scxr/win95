@@ -1,9 +1,9 @@
 .textWindow {
     position: absolute;
     left: 40%;
-    height: 390px;
-    width: 320px;
-    background-color: #929292;
+    height: 500px;
+    width: 410px;
+    background-image: url("../../../public/images/greenbg.gif");
     text-align: center;
     font-family: "W95";
     border: 1px solid white;
@@ -16,7 +16,7 @@
     text-align: left;
     color: white;
     margin-top: -16px;
-    background-image: linear-gradient(to right,#092763, #f5ffff);
+    background-image: linear-gradient(to right,#07080b, #f5ffff);
 
 }
 
@@ -36,16 +36,21 @@
 }
 
 .textWindow .txt {
-    overflow-y: scroll;
-    height: 350px;
+    overflow-y: hidden;
+    font-size: 19px;
+    text-align: center;
+    font-weight: 400;
+    height: 460px;
     border-radius: 7px;
     padding: 3px;
     text-align: left;
     width: 95%;
     margin: 0 auto;
     margin-top: 7px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
 }
 .textWindow .txt p {
+    color: rgb(255, 255, 255);
     margin-top: -1px;
 }

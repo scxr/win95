@@ -1,0 +1,94 @@
+.parent {
+    width: 70%;
+    margin: 0 auto;
+}
+.parent p {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "WSans";
+}
+.accordion {
+    width: 100%!important;
+    margin-left: 200px;
+    margin: 0 auto;
+    color: white ;
+    background-color: transparent !important;
+    color: rgb(255, 255, 255);
+  }
+  
+  .accordionButton {
+      background-color: transparent;
+      font-size: 32px;
+      margin: 0 auto;
+      color: rgb(255, 255, 255);
+      box-shadow: none;
+      outline: none;
+      border: none;
+      outline: none;
+      
+  }
+  .accordainIcon {
+    color: black !important;
+  }
+  
+  .MuiPaper-root {
+    margin: 0px auto !important;
+  }
+  
+  .accordain-Heading {
+    font-weight: 600 !important;
+    background-color: black;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  .footer {
+    margin-top: -10px;
+    text-align: center;
+  }
+  .sc-bdfBQB {
+    margin: 0 50px !important;
+  }
+  
+  .icon {
+    margin: 0 2px;
+    font-size: 50px !important;
+    color: white;
+  }
+  
+  .icons > a {
+    text-decoration: none !important;
+    color: white;
+  }
+  
+  .roadmap-team {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* padding: ; */
+    padding: 20px !important;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .roadmap {
+      color: rgb(255, 0, 0);
+      padding-top: 60px;
+    }
+  
+    .sc-bdfBQB {
+      margin: 0 20px !important;
+    }
+  
+    .footer {
+      margin-top: -60px;
+    }
+  }
+  
+
+
+  .overrideHr {
+      background-color:rgba(255, 255, 255, 0.507) !important;
+      width: 100%;
+      height: 2px;
+  }

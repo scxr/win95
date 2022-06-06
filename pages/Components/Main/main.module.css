@@ -19,4 +19,14 @@
 }
 .icons .icon img {
     cursor: pointer;
+
+}
+
+.images {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    min-width: 100px;
+    color: white;
+    z-index: 0;
 }

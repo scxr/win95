@@ -4,14 +4,19 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-image: url("../public/images/skullll.png");
+  background-image: url("../public/images/dk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   height: 100%;
   font-family: "W95";
-  overflow-y: hidden;
+  overflow-x: hidden;
   cursor: url("../public/images/95cursorsmall.png"), default;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   
 }
 html * {
@@ -30,4 +35,29 @@ a {
 @font-face {
   font-family: "W95";
   src: url("../public/W95FA.otf");
+}
+
+@font-face {
+  font-family: "WSans";
+  src: url("../public/WSans.ttf");
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5a5a5a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
