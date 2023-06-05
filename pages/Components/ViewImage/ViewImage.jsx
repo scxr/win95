@@ -19,13 +19,13 @@ const ImageWindow = (props) => {
                         <p>{props.title}</p>
                         <img src="/images/close.png" onClick={() => props.handleClose("close")} />
                         <img src="/images/8208.png" style={{marginRight: "20px"}} onClick={() => {
-                                    actions.minimise(props.title)
-                                    actions.addMin(props.title, "images/img.png")
+                                    actions.minimise(";)")
+                                    actions.addMin(props.title, ";)")
                                     }} />
                     </div>
                     <div className={styles.content}>
                         <img src={props.img} onDrag={() => {return false}} onDragStart={() => {return false}} />
-                        <h3>{props.title}</h3>
+                        <h3>{";)"}</h3>
                     </div>
                     </div>
 

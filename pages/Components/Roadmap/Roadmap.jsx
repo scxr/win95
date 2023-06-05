@@ -37,7 +37,7 @@ const Roadmap = (props) => {
                         <h2>
                             <AccordionButton className={styles.accordionButton} _expanded={{ color: "rgb(0,250,0)" }}>
                                 <Box style={{ fontFamily: "W95"}} flex="1" textAlign="left" opacity="100%" _focus={{ boxShadow: "none", marginLeft: "200px !important"}}>
-                                2022 Q2/Q3
+                                Phase 1
 
                                 </Box>
                                 <AccordionIcon />
@@ -45,15 +45,14 @@ const Roadmap = (props) => {
                         </h2>
                         <AccordionPanel pb={4} padding="10">
                         <ul>
-                            <li>Build a strong community, and collab with other projects bringing something new to the space.</li>
+                            <li>Open applications.</li>
                             <br />
-                            <li>Release 10,000 NFTs on the Ethereum blockchain</li>
+                            <li>Accept a maximum of 50 uers to our wave 1 initiates pool.</li>
                             <br />
-                            <li>Upon minting and reveal release the paint site, reachable through the paint icon. This will allow users to place their NFTs at a pre-determined location on a canvas. Certain spots on the canvas will grant a monetary reward instantly claimable. See FAQ section for more information.</li>
+                            <li>Weed out the useless initiates while replacing them with new members through our rolling application process.</li>
                             <br />
-                            <li>Release staking for the NFTs to passively earn our PUZZLE coin. Every week a challenge will be released, winners of the challenge will have their staking rewards increased by a certain % depending on how hard the challenge is. (See FAQ for types of challenges we will be using)</li>
-                            <br />
-                            <li>Release a site where 13 challenges will be released every month (timespan is not solidified) where users can purchase a ticket for a small price, nft owners will get 50% off of all tickets, all entries will go into a prize pot, the house will take a small commission (approx. 5-7%) and whoever completes all 13 challenges will receive the entire prize pool.</li>
+                            <li>Create and market our insane value.</li>
+                            
 
                         </ul>
                         </AccordionPanel>
@@ -63,7 +62,7 @@ const Roadmap = (props) => {
                         <h2>
                             <AccordionButton className={styles.accordionButton} _expanded={{ color: "rgb(0,250,0)" }}>
                                 <Box style={{ fontFamily: "W95"}} flex="1" textAlign="left" opacity="100%" _focus={{ boxShadow: "none", marginLeft: "200px !important"}}>
-                                2022 Q4
+                                Phase 2
 
                                 </Box>
                                 <AccordionIcon />
@@ -71,11 +70,11 @@ const Roadmap = (props) => {
                         </h2>
                         <AccordionPanel pb={4} padding="10">
                         <ul>
-                            <li>Expand our team to enable us to bring out more revolutionary products for the holders which will increase the value of their holdings.</li>
+                            <li>???</li>
                             <br />
-                            <li>Host an in person event (Europe) where users will be able to compete over the challenges, with keynote speeches about NFTs and solidity development/security. Pizza will be provided ;) </li>
+                            <li>??? </li>
                             <br />
-                            <li>Host an in person event (Americas) similar to the EU event.</li>
+                            <li>???</li>
                             
                         </ul>
                         </AccordionPanel>
@@ -84,7 +83,7 @@ const Roadmap = (props) => {
                         <h2>
                             <AccordionButton className={styles.accordionButton} _expanded={{ color: "rgb(0,250,0)" }}>
                                 <Box style={{ fontFamily: "W95"}} flex="1" textAlign="left" opacity="100%" _focus={{ boxShadow: "none", marginLeft: "200px !important"}}>
-                                2023 Q1
+                                Phase 3
 
                                 </Box>
                                 <AccordionIcon />
@@ -92,9 +91,11 @@ const Roadmap = (props) => {
                         </h2>
                         <AccordionPanel pb={4} padding="10">
                         <ul>
-                            <li>Become the puzzle central for blockchain, to achieve this we will release free courses for cryptography techniques, common stegonography methodology and things of the sort.</li>
+                            <li>???</li>
                             <br />
-                            <li>TBA</li>
+                            <li>??? </li>
+                            <br />
+                            <li>???</li>
                             
                             
                         </ul>
